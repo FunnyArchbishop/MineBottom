@@ -13,4 +13,6 @@
 
 硬件使用 CH340（VID 1A86、PID 7523）以及恢复供电会自动亮的 5V USB 灯。取电端 V+ 接继电器 COM，NO 接灯端 V+，两端 GND 直连。接线前拔下两个 USB 插头。
 
-详见 [安装与构建](mod/README.md)。[Python 串口桥接](bridge/README.md) 可独立调试，日常运行游戏模组无需桥接。
+详见 [安装与构建](mod/README.md)和[串口连接与排查](docs/serial-connection.md)。[Python 串口桥接](bridge/README.md)可独立调试，日常运行游戏模组无需桥接。
+
+本项目以 [MIT 许可证](LICENSE)发布。

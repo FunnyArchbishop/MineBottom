@@ -46,6 +46,7 @@ $manifest.depends.minecraft = $MinecraftVersion
 $manifest.depends.fabricloader = ">=$($target.Loader)"
 $manifest.depends.'fabric-api' = ">=$($target.Api)"
 $manifest | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath "$($classes.FullName)/fabric.mod.json" -Encoding utf8
+Copy-Item -LiteralPath "$PSScriptRoot/../LICENSE" -Destination "$($classes.FullName)/LICENSE_MineBottom"
 $out = Join-Path $PSScriptRoot "build/minebottom-$($manifest.version)+$MinecraftVersion.jar"
 & "$Jdk/bin/jar.exe" --create --file $out -C $classes.FullName .
 if ($LASTEXITCODE) { throw 'JAR packaging failed.' }

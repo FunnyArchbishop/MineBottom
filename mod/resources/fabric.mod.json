@@ -3,6 +3,7 @@
   "id": "minebottom",
   "version": "0.3.0",
   "name": "MineBottom Nightlight",
+  "license": "MIT",
   "description": "Connect a client-visible lever to a local USB nightlight.",
   "environment": "client",
   "entrypoints": { "client": ["minebottom.NightlightMod"] },

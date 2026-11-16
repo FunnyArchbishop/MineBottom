@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "minebottom",
+  "version": "0.3.0",
+  "name": "MineBottom Nightlight",
+  "description": "Connect a client-visible lever to a local USB nightlight.",
+  "environment": "client",
+  "entrypoints": { "client": ["minebottom.NightlightMod"] },
+  "depends": {
+    "minecraft": "26.3",
+    "java": ">=25",
+    "fabricloader": ">=0.20.1",
+    "fabric-api": "*"
+  }
+}

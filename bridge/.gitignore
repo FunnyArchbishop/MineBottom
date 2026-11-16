@@ -1,0 +1,5 @@
+bridge.token
+__pycache__/
+.venv/
+.deps/
+.uv-cache/
